@@ -13,7 +13,7 @@ all: $(NAME)
 $(NAME): qjulia.c qjulia_kernel.cl
 	gcc qjulia.c $(LIBS) -o $(NAME)
 
-fclean : clean
+fclean :
 	@/bin/rm -f $(NAME)
 
 re : fclean all
