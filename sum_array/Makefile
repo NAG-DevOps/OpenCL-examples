@@ -1,5 +1,7 @@
 PROJ=vecAdd
 
+LDFLAGS=-L /opt/amdgpu-pro/lib64 -lOpenCL
+
 CC=gcc
 
 CFLAGS=-std=c99 -Wall -DUNIX -g -DDEBUG
@@ -26,7 +28,7 @@ ifneq ($(DARWIN),)
 else
 
 # Linux OS
-LIBS=-lOpenCL -lm
+LIBS=-L /opt/amdgpu-pro/lib64 -lOpenCL -lm
 ifeq ($(PROC_TYPE),)
 	CFLAGS+=-m32
 else
