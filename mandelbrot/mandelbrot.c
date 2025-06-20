@@ -4,7 +4,7 @@
 
 #include "defs.h"
 
-
+#include <math.h>
 
 int main() {
 
