@@ -56,6 +56,9 @@ endif
 $(PROJ): $(PROJ).c
 	$(CC) $(CFLAGS) -o $@ $^ clbuild.c $(INC_DIRS:%=-I%) $(LIB_DIRS:%=-L%) $(LIBS)
 
+run: $(PROJ)
+	./$(PROJ)
+
 .PHONY: clean
 
 clean:

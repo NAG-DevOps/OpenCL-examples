@@ -58,6 +58,9 @@ endif
 $(PROJ): $(PROJ).c
 	$(CC) $(CFLAGS) -o $@ $^ $(INC_DIRS:%=-I%) $(LIB_DIRS:%=-L%) $(LIBS)
 
+run: $(PROJ)
+	./$(PROJ)
+
 .PHONY: clean
 
 clean:
