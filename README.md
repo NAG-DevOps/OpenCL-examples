@@ -5,7 +5,7 @@ Simple examples of OpenCL code, which I am using to learn heterogeneous and GPU 
 
 # Examples included
 
-* -- reproduced to work in 2025 on AMD GPU
+`*` -- reproduced to work in 2025 on AMD GPU
 
 - *`add_numbers`: add a list of numbers together. Includes detailed error handling which makes the code harder to read and understand
 - *`square_array`: computes *array*^2 (I am playing mostly with this one)
