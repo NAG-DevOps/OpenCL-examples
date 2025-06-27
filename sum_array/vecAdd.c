@@ -86,7 +86,7 @@ int main( int argc, char* argv[] )
     context = clCreateContext(0, 1, &device_id, NULL, NULL, &err);
  
     // Create a command queue 
-    queue = clCreateCommandQueue(context, device_id, 0, &err);
+    queue = clCreateCommandQueueWithProperties(context, device_id, 0, &err);
  
     // Create the compute program from the source buffer
     program = clCreateProgramWithSource(context, 1,

@@ -139,7 +139,7 @@ int main(int argc, char** argv)
 
     // Create a command commands
     //
-    commands = clCreateCommandQueue(context, device_id, 0, &err);
+    commands = clCreateCommandQueueWithProperties(context, device_id, 0, &err);
     if (!commands)
     {
         printf("Error: Failed to create a command commands!\n");
